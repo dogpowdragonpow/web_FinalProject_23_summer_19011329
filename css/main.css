@@ -1,0 +1,126 @@
+/*
+            rgb(22,42,70) 
+            rgb(61,93,144)
+            rgb(111,135,174)
+            rgb(153,187,222)
+            rgb(187,208,235)
+            rgb(215,220,224)
+            */
+            body{ padding : 5%; min-width: 480;}
+            a{ text-decoration: none; color: black;}
+            header{
+                border-bottom: solid 2px rgb(22,42,70);/*#337ab7 */
+                overflow:hidden;
+                padding-bottom: 7px;
+            }
+
+            /* 상단 바 */
+            .Logo{ text-align:center; font-family: fantasy;}
+            .Logo h1{font-size:50px;}
+            .Logo h1 a:hover{text-decoration:none;}
+            .leftnav{ display:flex; float:left }
+            .leftnav a{ margin-right: 10px;}
+            .rightnav{ float:right }
+            .rightnav a{ margin-right: 10px }
+            .Logo h1 span{color:rgb(61,93,144);}
+            .leftnav:hover{font-weight: bolder;}
+            .rightnav a:hover{font-weight: bolder;}
+
+            /* main*/
+            .main{ min-height: 50%; height: 100%;}
+            .main >div{ padding: 5%; }
+            .box-container{
+                display: grid;
+                grid-template-columns: 25% 25% 25% 25%;
+                width: 100%;
+            }
+
+            /* box */
+            .box{
+                min-height: 300px;
+                background-color: rgb(153,187,222);/*rgb(207, 207, 207);*/
+                /*background-image: linear-gradient(to bottom right, rgb(92, 90, 90),rgb(197, 197, 197));  rgb(57, 126, 167), rgb(198, 216, 226) */
+                border-radius: 30px;
+                margin: 10px;
+                padding: 2%;
+                text-align: center;
+                color: rgb(215,220,224);
+            }
+            .inner{ height : 100%;}
+            .box h3{ 
+                color:white;; 
+                margin-bottom: 3%;
+                font-size: 25px;
+            }
+            .box h4{ 
+                color:white; 
+                font-family:sans-serif; 
+                font-weight: bolder;
+            }
+            .boxvalue h4{
+                font-size: 35px;
+                color: rgb(61,93,144);
+            }
+
+            /* 버튼, 인풋 관련 */
+            .modify-btn, .add-btn{
+                background-color: rgb(187,208,235);/* rgb(56, 129, 171)*/
+                width: 80px;
+                color: rgb(39, 53, 61);
+                border-radius:20px; 
+                font-weight:bolder;
+                border:none;
+                color:white; 
+                font-family:sans-serif;
+
+            }
+            .modify-btn:hover, .add-btn:hover {
+                background-color: rgb(111,135,174);
+                transform: scale( 1.2 );
+                color: white;
+            }
+            .modify-btn{ margin-top: 15%; }
+            .add-btn{ margin-top : 10%;}
+            .Input1{
+                border:none; border-radius:10px;
+                outline:none;
+                width: 80%;
+            }
+            select{
+                border-radius: 10px;
+                outline:none;
+                border: none;
+                width: 80%;
+                padding: 2px 2px;
+            }
+            
+
+            /* chart 관련 */
+            .chart{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .barchart, .piechart{ display: block;}
+
+
+            /** meadia queries */
+            @media (min-width: 601px) and (max-width: 1000px) {
+            .box-container {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 50% 50%;
+                width: 100%;
+            }
+            canvas{
+                margin-bottom: 50px;
+                text-align: center;
+            }
+            }
+            @media (max-width: 600px) {
+            .box-container {
+                display: grid;
+                grid-template-columns: 100%;
+                width: 100%;
+            }
+            }
+            
