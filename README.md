@@ -26,9 +26,9 @@ html, javascript, css, mySQL, php를 내가 얼마나 공부하고 이해했는�
 ### Report
 https://hungry-barracuda-23c.notion.site/Project4-MoMeMo-c7a5239132f446beb4b482ca445e0d95?pvs=4
 <p>
-  <img width="320" height="auto" src="./contents/1.png"/>
-  <img width="320" height="auto" src="./contents/2.png"/>
-  <img width="320" height="auto" src="./contents/3.png"/>
+  <img width="320" height="auto" src="./contents/1.jpeg"/>
+  <img width="320" height="auto" src="./contents/2.jpeg"/>
+  <img width="320" height="auto" src="./contents/3.jpeg"/>
 </p>
 <p>
   <img width="320" height="auto" src="./contents/4.png"/>
